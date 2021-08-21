@@ -1,0 +1,58 @@
+@import './mint-variables.scss';
+@import './font-face.scss'; 
+@import './transition.scss'; 
+
+*{
+    box-sizing: border-box;
+}
+body{
+    @include Bg();
+    @include FontColor1();
+    font-family:AlibabaSans-Regular, sans-serif;
+}
+
+.bannerBox{
+    img{
+        width:100%
+    }
+}
+.contentBox{
+    padding:15px;
+    @include BarBg();
+}
+.border{
+    border: 1px solid $icon;
+    border-radius: 6px;
+}
+.InBg{
+    @include InBg();
+}
+.title1{
+    font-size: 18px; 
+    font-weight: 500;
+}
+.title2{
+    font-size: 15px; 
+    font-weight: 500;
+}
+.FontColor1{
+    @include FontColor1();
+}
+.FontColor2{
+    @include FontColor2();
+}
+.text1{
+    @include FontColor1();
+    font-size: 14px; 
+    font-weight: 400;
+}
+.text2{
+    font-size: 12px; 
+    font-weight: 400;
+}
+// 弹性布局左右靠
+.flex-space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
